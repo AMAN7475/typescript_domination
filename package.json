@@ -1,0 +1,24 @@
+{
+  "name": "typescript_domination",
+  "version": "1.0.0",
+  "description": "Learning TypeScript from basics to advanced with hands-on examples and practice projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AMAN7475/typescript_domination.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AMAN7475/typescript_domination/issues"
+  },
+  "homepage": "https://github.com/AMAN7475/typescript_domination#readme",
+  "dependencies": {
+    "typescript": "^6.0.3"
+  }
+}
