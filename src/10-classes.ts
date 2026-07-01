@@ -1,0 +1,58 @@
+class Person {
+    // Properties
+    private name: string;
+    protected age: number;
+    public email: string;
+
+    // Constructor 
+    constructor(name: string, age: number, email: string){
+        this.name = name;
+        this.age = age;
+        this.email = email;
+    }
+
+    //Methods
+    public introduce(): string {
+        return`hi, I am ${this.name} and I am ${this.age} years old.`;
+    }
+
+    // Getter
+    public getName(): string {
+        return this.name;
+    }
+
+    // Setter
+    public setName(name: string):void{
+        this.name = name;
+    }
+}
+
+class Employee {
+    constructor(
+        private id: number,
+        public name: string,
+        protected department: string,
+    ) {}
+
+    getDetails(): string {
+        return `${this.name} works in ${this.department}`;
+    }
+}
+
+let Aman = new Employee(101, "Aman", "FrontEnd Development");
+console.log(Aman.getDetails());
+
+class Manager extends Employee {
+    constructor(
+        id: number,
+        name: string,
+        department: string,
+        private teamSize: number,
+    ){
+        super(id, name, department);
+    }
+
+    getTeamInfo(): string {
+        return `${this.name} manages ${this.teamSize} people`;
+    }
+}
